@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import Input from "./Input";
+import Form from "./Form";
 import Tasks from "./Tasks";
 
 function Controller() {
@@ -22,7 +22,7 @@ function Controller() {
 
   return (
     <div>
-      <Input addToList={addToList} />
+      <Form addToList={addToList} />
       <Tasks todos={todos} removeTodo={removeTodo}/>
     </div>
   );
